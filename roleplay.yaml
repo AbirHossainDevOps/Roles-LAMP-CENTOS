@@ -1,0 +1,8 @@
+- name: Playbook to setup LAMP
+  hosts: clients-c
+  become: true
+
+  roles:
+    - php
+    - apache
+    - mysql

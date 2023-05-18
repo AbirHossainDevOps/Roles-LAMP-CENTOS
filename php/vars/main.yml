@@ -1,0 +1,6 @@
+---
+# vars file for php
+#
+php:
+  - php-fpm
+  - php-mysql

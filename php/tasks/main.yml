@@ -1,0 +1,10 @@
+---
+# tasks file for php
+#
+- name: Installation in CentOS
+  package:
+    name: '{{ item }}'
+    state: latest
+  loop: '{{ php }}'
+  when: ansible_os_family == "RedHat"
+
